@@ -1,0 +1,146 @@
+.total-cost tr {
+    cursor: pointer;
+}
+.hiddenRow {
+    padding: 0 4px !important;
+    background-color: #eeeeee;
+    font-size: 16px;
+    padding-left: 50px !important;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (min-device-width:698px) {
+    div#showgrid {
+        height: auto;
+        margin: auto;
+    }
+}
+
+div.column {
+    border-style: solid;
+    border-width: 2px;
+    /* border-bottom: 6px solid; */
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+}
+
+@media (min-device-width: 9in) {
+    .column {
+        width: 2.6in;
+        height: 3.2in;
+        display: inline;
+        float: left;
+    }
+}
+
+.column {
+    width: 2.6in;
+    height: 3.2in;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    display: table;
+    overflow: hidden;
+}
+
+.column a {
+    color: black;
+    font-size: 25px;
+    display: table-cell;
+    vertical-align: middle;
+}
+/* .column a u {
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    height: 100%;
+    padding-top: 2.5%;
+} */
+/* .column a u::before,
+.column a u::after {
+    content: '';
+    display: block;
+    width: 100%;
+}
+.column a u::before {
+    width: 95%;
+    height: 70%;
+    margin: 0px 2.5% 2.5%;
+    border: 1px solid;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+}
+.column a u::after {
+    height: 30%;
+    background-image: url('imgs/grid.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top center;
+} */
+
+.column img {
+    width: 2in;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.column p{
+    font-size: 14px;
+    /*text-decoration: underline;*/
+    line-height: 100%;
+    text-align: left;
+    margin: 0 10px;
+    border-bottom: 1px solid black;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #showgrid, #showgrid * {
+        visibility: visible;
+    }
+    #showgrid {
+    }
+}
+.navbar{
+	background-image: url("/images/wall-bg.jpg");
+	background-size: 100%;
+}
+.main-sidebar{
+	background-image: url("/images/bg.png");
+	background-color: white !important;
+	background-size: 500%;
+}
+.skin-blue .sidebar a {
+    background-color: #222d32;
+}
+.logo{
+
+	background: url("/images/logo.png") no-repeat center;
+	background-size: 80%;
+	background-color: transparent !important;
+}
+.log-out{
+    float:right;
+    margin: 14px 12px;
+    background-color: white;
+    width: 60px;
+    text-align: center;
+    line-height: 25px;
+}
